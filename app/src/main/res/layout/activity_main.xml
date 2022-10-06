@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="64dp"
-        android:text="Estatus del alumno"
+        android:text="@string/tv_estatus_String"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,11 +24,13 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="52dp"
         android:ems="10"
-        android:hint="Matemáticas"
+        android:hint="@string/txt_matematicas_String"
         android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_estatus" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_estatus"
+        tools:ignore="TextContrastCheck"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/txt_fisica"
@@ -36,12 +38,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="44dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Física"
+        android:hint="@string/txt_fisica_String"
         android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_matematicas" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_matematicas"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/txt_quimica"
@@ -49,12 +53,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="40dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Química"
+        android:hint="@string/txt_quimica_String"
         android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_fisica" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_fisica"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button"
@@ -63,7 +69,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="40dp"
         android:onClick="estatus"
-        android:text="Evaluar"
+        android:text="@string/boton_Calcular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_quimica" />
 </androidx.constraintlayout.widget.ConstraintLayout>
